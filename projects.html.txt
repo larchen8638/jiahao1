@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>客户案例 - 家豪建筑工程有限公司 Projects - Jiahao Construction</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin:0; padding:0; }
+    .container { max-width: 900px; margin: auto; padding: 20px; }
+    nav ul { list-style:none; padding:0; display:flex; gap:15px; }
+    nav ul li { display:inline; }
+    nav ul li a { text-decoration:none; color:#333; font-weight:bold; }
+    header, footer { background:#004080; color:#fff; padding: 15px 0; }
+    footer p { margin: 0; text-align:center; }
+    .lang { display:none; }
+    .project { border: 1px solid #ccc; padding: 15px; margin-bottom: 15px; }
+    .project img { max-width: 100%; height: auto; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>
+        <span class="lang lang-zh">客户案例</span>
+        <span class="lang lang-en">Projects</span>
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="index.html"><span class="lang lang-zh">首页</span><span class="lang lang-en">Home</span></a></li>
+          <li><a href="about.html"><span class="lang lang-zh">关于我们</span><span class="lang lang-en">About Us</span></a></li>
+          <li><a href="services.html"><span class="lang lang-zh">服务</span><span class="lang lang-en">Services</span></a></li>
+          <li><a href="projects.html"><span class="lang lang-zh">案例</span><span class="lang lang-en">Projects</span></a></li>
+          <li><a href="contact.html"><span class="lang lang-zh">联系</span><span class="lang lang-en">Contact</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2><span class="lang lang-zh">精选工程案例</span><span class="lang lang-en">Featured Projects</span></h2>
+    <div class="project">
+      <img src="assets/img/project1.jpg" alt="住宅开发项目" />
+      <h3><span class="lang lang-zh">Green Hill 私人住宅开发</span><span class="lang lang-en">Green Hill Private Residential Development</span></h3>
+      <p><span class="lang lang-zh">地点：加州旧金山 | 工期：2023年3月 - 2023年11月</span><span class="lang lang-en">Location: San Francisco, CA | Duration: Mar 2023 - Nov 2023</span></p>
+    </div>
+    <div class="project">
+      <img src="assets/img/project2.jpg" alt="商业综合体" />
+      <h3><span class="lang lang-zh">北湾商业综合体</span><span class="lang lang-en">North Bay Commercial Complex</span></h3>
+      <p><span class="lang lang-zh">地点：加州圣荷西 | 工期：2022年5月 - 2023年4月</span><span class="lang lang-en">Location: San Jose, CA | Duration: May 2022 - Apr 2023</span></p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 202

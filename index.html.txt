@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>家豪建筑工程有限公司 Jiahao Construction & Engineering Co., Ltd.</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin:0; padding:0; }
+    .container { max-width: 1200px; margin: auto; padding: 20px; }
+    nav ul { list-style:none; padding:0; display:flex; gap:15px; }
+    nav ul li { display:inline; }
+    nav ul li a { text-decoration:none; color:#333; font-weight:bold; }
+    header, footer { background:#004080; color:#fff; padding: 15px 0; }
+    footer p { margin: 0; text-align:center; }
+    .lang { display:none; }
+    .hero { background:#cce6ff; padding: 40px 20px; text-align:center; }
+    .btn { display:inline-block; margin-top:15px; padding:10px 25px; background:#004080; color:#fff; text-decoration:none; border-radius: 5px; }
+    .features { display:flex; justify-content: space-around; margin-top: 40px; }
+    .feature { max-width: 30%; text-align:center; }
+    .feature img { max-width: 100px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>
+        <span class="lang lang-zh">家豪建筑工程有限公司</span>
+        <span class="lang lang-en">Jiahao Construction & Engineering Co., Ltd.</span>
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="index.html"><span class="lang lang-zh">首页</span><span class="lang lang-en">Home</span></a></li>
+          <li><a href="about.html"><span class="lang lang-zh">关于我们</span><span class="lang lang-en">About Us</span></a></li>
+          <li><a href="services.html"><span class="lang lang-zh">服务</span><span class="lang lang-en">Services</span></a></li>
+          <li><a href="projects.html"><span class="lang lang-zh">案例</span><span class="lang lang-en">Projects</span></a></li>
+          <li><a href="contact.html"><span class="lang lang-zh">联系</span><span class="lang lang-en">Contact</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <div class="lang lang-zh">
+        <h2>打造坚固未来</h2>
+        <p>我们承接各类土木工程项目，服务总包商、开发商及私人客户，致力于为美国市场提供高质量建筑解决方案。</p>
+        <a href="contact.html" class="btn">联系我们</a>
+      </div>
+      <div class="lang lang-en">
+        <h2>Building a Solid Future</h2>
+        <p>We undertake various civil engineering projects, serving general contractors, developers, and private clients, committed to delivering high-quality construction solutions for the U.S. market.</p>
+        <a href="contact.html" class="btn">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="features container">
+    <div class="feature">
+      <img src="assets/img/quality.png" alt="高品质" />
+      <h3><span class="lang lang-zh">高品质施工</span><span class="lang lang-en">High-Quality Construction</span></h3>
+      <p><span class="lang lang-zh">采用一流建材，严格符合美国建筑规范。</span><span class="lang lang-en">Using premium materials, strictly adhering to US building codes.</span></p>
+    </div>
+    <div class="feature">
+      <img src="assets/img/experience.png" alt="经验丰富" />
+      <h3><span class="lang lang-zh">20年经验</span><span class="lang lang-en">20 Years Experience</span></h3>
+      <p><span class="lang lang-zh">丰富的项目管理和执行经验，深谙美国市场需求。</span><span class="lang lang-en">Extensive project management and execution experience with deep understanding of the US market.</span></p>
+    </div>
+    <div class="feature">
+      <img src="assets/img/safety.png" alt="安全优先" />
+      <h3><span class="lang lang-zh">安全优先</span><span class="lang lang-en">Safety First</span></h3>
+      <p><span class="lang lang-zh">严格执行 OSHA 标准，保障工地安全。</span><span class="lang lang-en">Strict compliance with OSHA standards ensuring site safety.</span></p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 家豪建筑工程有限公司 Jiahao Construction & Engineering Co., Ltd. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const userLang = navigator.language || navigator.userLanguage;
+      if(userLang.startsWith('en')){
+        document.querySelectorAll('.lang-zh').forEach(el => el.style.display = 'none');
+        document.querySelectorAll('.lang-en').forEach(el => el.style.display = 'block');
+      } else {
+        document.querySelectorAll('.lang-en').forEach(el => el.style.display = 'none');
+        document.querySelectorAll('.lang-zh').forEach(el => el.style.display = 'block');
+      }
+    });
+  </script>
+</body>
+</html>

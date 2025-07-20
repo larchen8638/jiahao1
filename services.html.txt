@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>服务范围 - 家豪建筑工程有限公司 Services - Jiahao Construction</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin:0; padding:0; }
+    .container { max-width: 900px; margin: auto; padding: 20px; }
+    nav ul { list-style:none; padding:0; display:flex; gap:15px; }
+    nav ul li { display:inline; }
+    nav ul li a { text-decoration:none; color:#333; font-weight:bold; }
+    header, footer { background:#004080; color:#fff; padding: 15px 0; }
+    footer p { margin: 0; text-align:center; }
+    .lang { display:none; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>
+        <span class="lang lang-zh">服务范围</span>
+        <span class="lang lang-en">Services</span>
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="index.html"><span class="lang lang-zh">首页</span><span class="lang lang-en">Home</span></a></li>
+          <li><a href="about.html"><span class="lang lang-zh">关于我们</span><span class="lang lang-en">About Us</span></a></li>
+          <li><a href="services.html"><span class="lang lang-zh">服务</span><span class="lang lang-en">Services</span></a></li>
+          <li><a href="projects.html"><span class="lang lang-zh">案例</span><span class="lang lang-en">Projects</span></a></li>
+          <li><a href="contact.html"><span class="lang lang-zh">联系</span><span class="lang lang-en">Contact</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2><span class="lang lang-zh">我们提供以下服务：</span><span class="lang lang-en">We Offer the Following Services:</span></h2>
+    <ul>
+      <li><span class="lang lang-zh">土木工程总承包</span><span class="lang lang-en">Civil Engineering General Contracting</span></li>
+      <li><span class="lang lang-zh">地基与结构施工</span><span class="lang lang-en">Foundation and Structural Construction</span></li>
+      <li><span class="lang lang-zh">混凝土浇筑与加工</span><span class="lang lang-en">Concrete Pouring and Processing</span></li>
+      <li><span class="lang lang-zh">排水系统安装</span><span class="lang lang-en">Drainage System Installation</span></li>
+      <li><span class="lang lang-zh">道路与桥梁建设</span><span class="lang lang-en">Road and Bridge Construction</span></li>
+    </ul>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 家豪建筑工程有限公司 Jiahao Construction & Engineering Co., Ltd. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const userLang = navigator.language || navigator.userLanguage;
+      if(userLang.startsWith('en')){
+        document.querySelectorAll('.lang-zh').forEach(el => el.style.display = 'none');
+        document.querySelectorAll('.lang-en').forEach(el => el.style.display = 'block');
+      } else {
+        document.querySelectorAll('.lang-en').forEach(el => el.style.display = 'none');
+        document.querySelectorAll('.lang-zh').forEach(el => el.style.display = 'block');
+      }
+    });
+  </script>
+</body>
+</html>
